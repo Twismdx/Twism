@@ -12,7 +12,7 @@ routes.get("/", async function (req, res) {
             <a href='/books'>Books</a>`);
 });
 
-routes.use("/", book);
+routes.use("/", livestream);
 routes.use("/", books);
 
 module.exports = routes;
