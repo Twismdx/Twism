@@ -18,6 +18,7 @@ var allowedOrigins = ["https://example.com"];
 
 const app = express();
 
+
 app.use(helmet());
 /* app.use(cors(corsOptions)); */
 
