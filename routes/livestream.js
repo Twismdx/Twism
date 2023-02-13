@@ -3,14 +3,14 @@
 const livestream = require('express').Router()
 
 livestream.get('/livestream', async function (req, res) {
-	const { drid } = req.query
+	const { param } = req.query
 	const multi =
 		'https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&drid='
 	const single =
 		'https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&matchid='
-	if (drid === drid) {
+	if (param === drid) {
 		res.status(200).send({ MultiMatch: multi })
-	} else if (drid === matchid) {
+	} else if (param === matchid) {
 		res.status(200).send({ SingleMatch: single })
 	} else {
 		res.send('Invalid request')
