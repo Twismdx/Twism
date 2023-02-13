@@ -1,17 +1,23 @@
 {
-  "name": "express-vercel-serverless",
+  "name": "twism",
   "version": "1.0.0",
-  "description": "Express on Vercel",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon devServer.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twismdx/Twism.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Twismdx/Twism/issues"
+  },
+  "homepage": "https://github.com/Twismdx/Twism#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "helmet": "^4.6.0"
-  },
-  "devDependencies": {
-    "dotenv": "^10.0.0",
-    "nodemon": "^2.0.12"
+    "express": "^4.18.2"
   }
 }
