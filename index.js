@@ -15,7 +15,7 @@ app.get('/livestream', async function (req, res) {
 		'https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&matchid='
 	if (param === 'drid') {
 		res.status(200).send({ MultiMatch: multi })
-	} else if (param === matchid) {
+	} else if (param === 'matchid') {
 		res.status(200).send({ SingleMatch: single })
 	} else {
 		res.send('Invalid request')
