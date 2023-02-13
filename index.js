@@ -28,7 +28,7 @@ app.post('/matchid', async function (req, res) {
 	const { matchid, drid } = req.query
 	//do something
 	res.send(
-		`https://www.poolstat.net.au/livestream/multimatch?key=x5ryO5oo2W6JS9G7kkAb2XYWIm4m91sY&api=1&drid=${matchid}`
+		`https://www.poolstat.net.au/livestream/multimatch?key=x5ryO5oo2W6JS9G7kkAb2XYWIm4m91sY&api=1&ids=${matchid}`
 	)
 })
 
