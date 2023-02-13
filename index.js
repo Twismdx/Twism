@@ -7,7 +7,7 @@ app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
 })
 
-app.get('/livestream', async function (req, res) {
+app.get('/livestream', (req, res) => {
 	const { param } = req.query
 	const multi =
 		'https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&drid='
@@ -22,7 +22,7 @@ app.get('/livestream', async function (req, res) {
 	}
 })
 
-app.post('/matchid', async function (req, res) {
+app.post('/matchid', (req, res) => {
 	const { matchid, drid } = req.body
 	//do something
 	res.send(
