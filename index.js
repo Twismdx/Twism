@@ -25,10 +25,10 @@ app.get('/livestream', async function (req, res) {
 })
 
 app.post('/ids', async function (req, res) {
-	const { ids } = req.query
+	const { drid } = req.query
 	//do something
 	res.send(
-		`https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&ids=${ids}`
+		`https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&ids=${drid}`
 	)
 })
 
