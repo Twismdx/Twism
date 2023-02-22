@@ -25,19 +25,13 @@ app.get('/livestream', async function (req, res) {
 })
 
 app.post('/ids', async function (req, res) {
-	const { drid } = req.query
-	//do something
-	res.send(
-		`https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&ids=${drid}`
-	)
+    const { ids } = req.query
+	res.send(`https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&ids=${ids}`)
 })
 
 app.post('/drid', async function (req, res) {
 	const { drid } = req.query
-	//do something
-	res.send(
-		`https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&drid=${drid}`
-	)
+	res.send(`https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&drid=${drid}`)
 })
 
 // Export the Express API
