@@ -27,14 +27,14 @@ app.get('/livestream', async function (req, res) {
 app.post('/ids', async function (req, res) {
 	const { matchId } = req.query
 	res.send(
-		`https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&ids=${matchId}`
+		`https://www.poolstat.net.au/livestream/multimatch?key=WiO2ubjDeVpujLUZAdGSxO~SzbGfCGb7&api=1&ids=${matchId}`
 	)
 })
 
 app.post('/drid', async function (req, res) {
 	const { matchId } = req.query
 	res.send(
-		`https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&drid=${matchId}`
+		`https://www.poolstat.net.au/livestream/multimatch?key=WiO2ubjDeVpujLUZAdGSxO~SzbGfCGb7&api=1&drid=${matchId}`
 	)
 })
 
