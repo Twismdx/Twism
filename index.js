@@ -12,9 +12,9 @@ app.listen(PORT, () => {
 app.get('/livestream', async function (req, res) {
 	const { param } = req.query
 	const multi =
-		'https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&drid='
+		'https://www.poolstat.net.au/livestream/multimatch?key=WiO2ubjDeVpujLUZAdGSxO~SzbGfCGb7&api=1&drid='
 	const single =
-		'https://www.poolstat.net.au/livestream/multimatch?key=TUroCx2IxK7p8fZLIK6cS6O~9xritQk~&api=1&ids='
+		'https://www.poolstat.net.au/livestream/multimatch?key=WiO2ubjDeVpujLUZAdGSxO~SzbGfCGb7&api=1&ids='
 	if (param === 'multi') {
 		res.status(200).send({ MultiMatch: multi })
 	} else if (param === 'single') {
